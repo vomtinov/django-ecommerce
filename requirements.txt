@@ -10,7 +10,7 @@ oauthlib==3.1.0
 pep8==1.7.1
 Pillow==8.4.0 --only-binary=:all:
 pycodestyle==2.5.0
-python-decouple==3.1
+python-decouple==3.4
 python3-openid==3.2.0
 pytz==2020.1
 requests==2.24.0
