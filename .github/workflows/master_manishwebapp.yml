@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install setuptools==65.5.0  # ✅ Downgrade to avoid wheel error
-          pip install -r requirements.txt
+          pip install setuptools==65.5.0  # ✅ Downgrade setuptools
+          pip install --no-build-isolation -r requirements.txt  # ✅ Critical fix
 
       - name: Collect static files (optional for Django)
         run: |
